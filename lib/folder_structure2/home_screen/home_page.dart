@@ -13,6 +13,7 @@ class MyHomePage extends StatelessWidget {
         return Scaffold(
           appBar: AppBar(
             title: const Text('Home Page'),
+            backgroundColor: Colors.blueGrey,
           ),
           body: Center(
             child: Column(
@@ -32,6 +33,7 @@ class MyHomePage extends StatelessWidget {
             ),
           ),
           floatingActionButton: FloatingActionButton(
+            backgroundColor: Colors.blueGrey,
             onPressed: Provider.of<HomeController>(context, listen: false).incrementCounter(),
             tooltip: 'Increment',
             child: const Icon(Icons.add),
